@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: LDAP-AUTH-APP
+ldap:
+  enabled: true
+  urls: ldap://ldap.forumsys.com:389/
+  base:
+    dn: dc=example,dc=com
+  username: cn=read-only-admin,dc=example,dc=com
+  password: password
+  user:
+    dn:
+      pattern: uid={0}
